@@ -22,17 +22,31 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descripcion
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este proyecto fue desarrollado con el framework [Nest](https://github.com/nestjs/nest).
 
-## Installation
+## Instalacion
 
+primero que nada deberemos instalar las dependencias de la aplicacion con el comando.
 ```bash
 $ npm install
 ```
-
-## Running the app
+luego de eso deberemos crear un archivo .env con el siguiente formato 
+```
+    PORT=3000  <- puerto de la aplicacion
+    NODE_ENV=local <- entorno de la aplicacion ( el entorno local sincronizara las entidades de typeorm en tablas de la base de datos PG) 
+    DB_NAME=peliculasPrueba <- nombre de la base de datos de prueba
+    DB_PASSWORD=passwordPrueba <- contraseña de la base de datos de prueba
+    DB_HOST=localhost <- host de la base de datos de prueba
+    DB_USER=postgres <- usuario de la base de datos de prueba
+    DB_SSL=false <- booleano de si la base de datos tiene SSL de la base de datos de prueba
+    MOVIE_API_KEY=key-asd-asd-asd <- API_KEY de themoviedb.org v3 (pasare la mia por el correo ya que el repositorioo es publico).
+    MOVIE_API_URL=https://api.themoviedb.org/3/ <- Endpoint de la API de themoviedb
+    JWT_SECRET=prueba-peliculas <- secret del bearer token
+    JWT_ISSUER=alirioangel <- issuer del bearer token
+```
+## Iniciando la aplicacion
 
 ```bash
 # development
@@ -44,29 +58,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
